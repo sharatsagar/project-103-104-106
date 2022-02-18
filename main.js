@@ -15,8 +15,7 @@ function take_snapshot()
         document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'"/>';
     });
 } 
-
-classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/7is23Ljp1/model.json',modelLoaded)
+classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/JACkTMciY/model.json',modelLoaded);
 function check(){
   img=document.getElementById("selfie_image")
 classifier.classify(img,gotresult)
